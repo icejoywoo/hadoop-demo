@@ -74,7 +74,6 @@ public class BasicMRTest {
         String OUT_DIR = "testing/wordcount/output";
         String DATA_FILE = "sample.txt";
         
-        FileSystem fs = FileSystem.get(conf);
         Path inDir = new Path(IN_DIR);
         Path outDir = new Path(OUT_DIR);
         
