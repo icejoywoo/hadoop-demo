@@ -25,24 +25,12 @@
         <protobuf.version>3.4.0</protobuf.version>
         <protoc.executable>/usr/local/bin/protoc</protoc.executable>
 
-        <thrift.version>0.9.2</thrift.version>
+        <!-- thrift version 需要匹配 -->
+        <thrift.version>0.9.3</thrift.version>
         <thrift.executable>/usr/local/bin/thrift</thrift.executable>
 
         <hadoop.version>2.6.0</hadoop.version>
     </properties>
-
-    <description>
-        A simple example of how Avro's Maven plugin can be used to compile Avro schema files into Java.
-    </description>
-
-    <developers>
-        <developer>
-            <id>aholmes</id>
-            <name>Alex Holmes</name>
-            <email>grep.alex@gmail.com</email>
-            <url>http://grepalex.com</url>
-        </developer>
-    </developers>
 
     <dependencies>
         <dependency>

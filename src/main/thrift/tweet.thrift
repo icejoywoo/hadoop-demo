@@ -1,3 +1,6 @@
+namespace cpp thrift.example
+namespace java thrift.example
+
 enum TweetType {
     TWEET,
     RETWEET = 2,
@@ -17,4 +20,19 @@ struct Tweet {
     4: optional Location loc;
     5: optional TweetType tweetType = TweetType.TWEET
     16: optional string language = "english"
+}
+
+typedef list<Tweet> TweetList
+
+struct TweetSearchResult {
+    1: TweetList tweets;
+}
+
+const i32 MAX_RESULTS = 100;
+
+service Twitter {
+    void ping(),
+    bool postTweet(1:Tweet tweet),
+    TweetSearchResult searchTweets(1:string query),
+    oneway void zip()
 }
