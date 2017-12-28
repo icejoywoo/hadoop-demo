@@ -1,5 +1,14 @@
-# minicluster-mr2
-Hadoop MiniCluster for MR2
+# Hadoop Demo
+
+## serde demo
+
+1. hadoop writable
+2. avro
+3. protobuf
+4. kryo
+5. thrift
+
+## Hadoop MiniCluster for MR2
 
 This project provides a complete example of using the Hadoop MiniCluster with MR2 to create test case for Hadoop jobs.
 
