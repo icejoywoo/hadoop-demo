@@ -31,7 +31,8 @@ struct TweetSearchResult {
 const i32 MAX_RESULTS = 100;
 
 service Twitter {
-    void ping(),
+    string echo(1: string s),
+    oneway void ping(),
     bool postTweet(1:Tweet tweet),
     TweetSearchResult searchTweets(1:string query),
     oneway void zip()
